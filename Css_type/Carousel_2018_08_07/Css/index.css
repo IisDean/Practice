@@ -1,0 +1,26 @@
+/**
+ * Created by IisDean on 2018/8/7.
+ */
+html,body,p {
+    margin: 0;
+    padding: 0;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    box-shadow: 2px 2px 5px #ccc;
+}
+.carousel-wrap {
+    position: relative;
+    width: 100%;
+}
+.carousel-item {
+    display: none;
+    width: 100%;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
+.carousel-item img {
+    display: block;
+    max-width: 100%;
+}
