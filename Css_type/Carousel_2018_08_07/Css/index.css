@@ -1,9 +1,12 @@
 /**
  * Created by IisDean on 2018/8/7.
  */
-html,body,p {
+html,body,p,ul,li {
     margin: 0;
     padding: 0;
+}
+ul,li {
+    list-style: none;
 }
 .carousel-container {
     position: relative;
@@ -19,8 +22,72 @@ html,body,p {
     width: 100%;
     transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
+    opacity: 0;
 }
 .carousel-item img {
     display: block;
     max-width: 100%;
+}
+#carousel-1:checked + .carousel-1,
+#carousel-2:checked + .carousel-2,
+#carousel-3:checked + .carousel-3 {
+    display: block;
+    opacity: 1;
+}
+.page-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    cursor: pointer;
+    box-shadow: 0 0 5px #fff;
+}
+.page-left {
+    left: 5%;
+}
+.page-right {
+    right: 5%;
+}
+.page-icon:active {
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+}
+#carousel-1:checked ~ .carousel-1,
+#carousel-2:checked ~ .carousel-2,
+#carousel-3:checked ~ .carousel-3 {
+    display: block;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+}
+.carousel-indicators li {
+    display: inline-block;
+}
+.carousel-indicators li label {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+}
+#carousel-1:checked ~ .carousel-indicators li:nth-child(1) label,
+#carousel-2:checked ~ .carousel-indicators li:nth-child(2) label,
+#carousel-3:checked ~ .carousel-indicators li:nth-child(3) label {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform-origin: center center;
 }

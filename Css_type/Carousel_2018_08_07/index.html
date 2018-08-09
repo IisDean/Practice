@@ -21,18 +21,35 @@
 
     <div class="carousel-container">
         <div class="carousel-wrap">
-            <input class="carousel-open" checked type="radio" id="carousel-1" hidden />
+            <input class="carousel-open" checked type="radio" name="carousel" id="carousel-1" hidden />
             <div class="carousel-item carousel-1">
                 <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel_01">
             </div>
-            <input class="carousel-open" type="radio" id="carousel-2" hidden />
+            <input class="carousel-open" type="radio" name="carousel" id="carousel-2" hidden />
             <div class="carousel-item carousel-2">
                 <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Carousel_02">
             </div>
-            <input class="carousel-open" type="radio" id="carousel-3" hidden />
+            <input class="carousel-open" type="radio" name="carousel" id="carousel-3" hidden />
             <div class="carousel-item carousel-3">
                 <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=Carousel_03">
             </div>
+            <label class="page-icon page-left carousel-1" for="carousel-3">‹</label>
+            <label class="page-icon page-right carousel-1" for="carousel-2">›</label>
+            <label class="page-icon page-left carousel-2" for="carousel-1">‹</label>
+            <label class="page-icon page-right carousel-2" for="carousel-3">›</label>
+            <label class="page-icon page-left carousel-3" for="carousel-2">‹</label>
+            <label class="page-icon page-right carousel-3" for="carousel-1">›</label>
+            <ul class="carousel-indicators">
+                <li>
+                    <label for="carousel-1">·</label>
+                </li>
+                <li>
+                    <label for="carousel-2">·</label>
+                </li>
+                <li>
+                    <label for="carousel-3">·</label>
+                </li>
+            </ul>
         </div>
     </div>
 
